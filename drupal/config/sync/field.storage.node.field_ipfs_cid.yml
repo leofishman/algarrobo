@@ -1,0 +1,21 @@
+uuid: afbf98c3-3d59-49ce-a197-6d2e8ca9a9f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ipfs_cid
+field_name: field_ipfs_cid
+entity_type: node
+type: string
+settings:
+  max_length: 128
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

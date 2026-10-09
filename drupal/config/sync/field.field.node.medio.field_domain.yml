@@ -1,0 +1,19 @@
+uuid: 4390effd-3aca-41fe-ae4a-69236f4c3f59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain
+    - node.type.medio
+id: node.medio.field_domain
+field_name: field_domain
+entity_type: node
+bundle: medio
+label: Dominios
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

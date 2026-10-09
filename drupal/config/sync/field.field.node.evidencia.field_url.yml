@@ -1,0 +1,23 @@
+uuid: 9d083d15-6258-45c9-b66e-bc2fad6e38c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.evidencia
+  module:
+    - link
+id: node.evidencia.field_url
+field_name: field_url
+entity_type: node
+bundle: evidencia
+label: 'URL original'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

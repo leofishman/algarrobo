@@ -1,0 +1,13 @@
+# En git: composer.json/lock, config/sync, .ddev/config.yaml, settings.php y scripts/.
+# Todo lo demás se regenera con `ddev composer install` + `ddev drush site:install --existing-config`.
+/vendor/
+/recipes/
+/web/*
+!/web/sites/
+/web/sites/*
+!/web/sites/default/
+/web/sites/default/*
+!/web/sites/default/settings.php
+/.editorconfig
+/.gitattributes
+/LICENSE.txt

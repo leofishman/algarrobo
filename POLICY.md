@@ -4,15 +4,21 @@
 
 ## 1. Qué es una entrada
 
-Una entrada describe **un dominio** (ej. `example.com`) con:
+**Una entrada es un incidente, no un medio.** En Light Curate el id de un ítem es el hash de su contenido y no existe la edición (`LightGeneralizedTCR.sol`, `addItem`: `itemID = keccak256(_item)`; solo hay agregar, quitar e impugnar). Un medio con una lista de incidentes que crece obligaría a quitar y volver a enviar la entrada entera, con depósito y plazo de impugnación, cada vez que aparece un incidente. Por eso cada incidente es su propio ítem y el medio se arma en el consumidor agrupando por QID.
+
+Campos de un incidente:
 
 | Campo | Contenido |
 |---|---|
-| `domain` | Dominio registrable, sin subdominios salvo que sean un medio aparte |
-| `name` | Nombre del medio |
-| `incidents` | Lista de incidentes documentados (ver §3), cada uno con su evidencia |
-| `lean_reports` | Informes de tendencia (ver §4), cada uno con su método |
-| `owner` | Propietario o financiador principal, con fuente pública |
+| `outlet_qid` | QID de Wikidata del medio (ej. `Q9684`). Es la identidad; si el medio no tiene QID, se crea antes en Wikidata |
+| `domain` | Dominio registrable donde se publicó, sin subdominios salvo que sean un medio aparte |
+| `type` | `false` · `correction` · `omission` · `sanction` (ver §3) |
+| `publication_url` | La publicación concreta |
+| `date` | Fecha de la publicación (y de la corrección o el fallo si aplica) |
+| `claim` | Qué se publicó, en una frase, sin adjetivos |
+| `evidence` | Una o más piezas: URL, nivel (§3, 1–4), URL archivada, SHA-256 del archivo |
+
+Tendencia (§4) y propietario van en **listas aparte** con el mismo criterio: un ítem por informe, un ítem por dato de propiedad con fuente.
 
 La entrada **no** lleva un puntaje de seriedad. El puntaje lo calcula cada consumidor a partir de los incidentes, con una fórmula pública. Así la lista guarda hechos y la opinión queda del lado de quien la usa.
 
@@ -56,9 +62,10 @@ Las preguntas cerradas sobre hechos ("¿el medio X publicó una corrección de l
 
 ## 6. Disputas
 
-- Se impugna una entrada o un incidente concreto, citando qué sección de esta política no cumple.
+- Se impugna un incidente concreto, citando qué sección de esta política no cumple.
+- Un incidente que ya está en la lista (misma publicación, mismo `type`) se impugna por duplicado aunque el texto difiera: el contrato no lo detecta porque el id es el hash del contenido.
 - Depósitos: a definir (ver HANDOFF, preguntas abiertas). Más altos para impugnar entradas con muchas impugnaciones previas.
-- Corte: la Curation Court de Kleros (voto oculto en Gnosis), a confirmar.
+- Corte: la Curation Court de Kleros en Gnosis, con voto oculto desde KIP-87 (completado según la actualización de julio de 2026). Falta confirmar que una lista nueva de terceros pueda usarla (ver HANDOFF).
 
 ## 7. Licencia
 

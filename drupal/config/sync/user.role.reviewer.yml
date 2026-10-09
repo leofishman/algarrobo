@@ -1,0 +1,29 @@
+uuid: d53b417c-3139-44f6-aa6a-a75a256e38ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.evidencia
+    - node.type.incidente
+    - node.type.medio
+    - workflows.workflow.algarrobo
+  module:
+    - content_moderation
+    - node
+    - system
+id: reviewer
+label: Revisor
+weight: 5
+is_admin: false
+permissions:
+  - 'access content'
+  - 'edit any evidencia content'
+  - 'edit any incidente content'
+  - 'edit any medio content'
+  - 'use algarrobo transition approve'
+  - 'use algarrobo transition create_new_draft'
+  - 'use algarrobo transition reject'
+  - 'use algarrobo transition to_review'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'

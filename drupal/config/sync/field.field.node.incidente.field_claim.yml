@@ -1,0 +1,19 @@
+uuid: ef25fb4f-1ffc-4427-ae31-a3cffdb057e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_claim
+    - node.type.incidente
+id: node.incidente.field_claim
+field_name: field_claim
+entity_type: node
+bundle: incidente
+label: 'Qué se publicó'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

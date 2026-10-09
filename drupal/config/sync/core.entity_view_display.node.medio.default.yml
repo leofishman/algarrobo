@@ -1,0 +1,39 @@
+uuid: 9aba7ad6-57ae-487b-821e-1e570731a000
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.medio.field_domain
+    - field.field.node.medio.field_qid
+    - node.type.medio
+  module:
+    - user
+id: node.medio.default
+targetEntityType: node
+bundle: medio
+mode: default
+content:
+  field_domain:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_qid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

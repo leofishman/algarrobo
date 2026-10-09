@@ -1,0 +1,56 @@
+uuid: dcfe5917-c1ff-45c9-8ef0-3e2a977007ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.incidente
+  module:
+    - content_moderation
+id: algarrobo
+label: Algarrobo
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: 0
+      published: false
+      default_revision: false
+    published:
+      label: 'Listo para enviar'
+      weight: 1
+      published: true
+      default_revision: true
+    review:
+      label: 'En revisión'
+      weight: 2
+  transitions:
+    approve:
+      label: Aprobar
+      from:
+        - review
+      to: published
+      weight: 3
+    create_new_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+        - published
+      to: draft
+      weight: 0
+    reject:
+      label: 'Devolver a borrador'
+      from:
+        - review
+      to: draft
+      weight: 4
+    to_review:
+      label: 'Mandar a revisión'
+      from:
+        - draft
+        - review
+      to: review
+      weight: 2
+  entity_types:
+    node:
+      - incidente

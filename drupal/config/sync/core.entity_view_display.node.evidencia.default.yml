@@ -1,0 +1,75 @@
+uuid: dd3d50a7-3814-458d-b109-1e1a827ac868
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.evidencia.field_archive_url
+    - field.field.node.evidencia.field_ipfs_cid
+    - field.field.node.evidencia.field_level
+    - field.field.node.evidencia.field_sha256
+    - field.field.node.evidencia.field_url
+    - node.type.evidencia
+  module:
+    - link
+    - options
+    - user
+id: node.evidencia.default
+targetEntityType: node
+bundle: evidencia
+mode: default
+content:
+  field_archive_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_ipfs_cid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_level:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_sha256:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

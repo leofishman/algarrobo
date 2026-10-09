@@ -1,0 +1,29 @@
+uuid: 7ea0e332-cf6d-4471-9bbc-3c8f162e1138
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.evidencia
+    - node.type.incidente
+    - node.type.medio
+    - workflows.workflow.algarrobo
+  module:
+    - content_moderation
+    - node
+    - system
+id: contributor
+label: Colaborador
+weight: 4
+is_admin: false
+permissions:
+  - 'access content'
+  - 'create evidencia content'
+  - 'create incidente content'
+  - 'create medio content'
+  - 'edit own evidencia content'
+  - 'edit own incidente content'
+  - 'edit own medio content'
+  - 'use algarrobo transition create_new_draft'
+  - 'use algarrobo transition to_review'
+  - 'view latest version'
+  - 'view own unpublished content'

@@ -1,0 +1,24 @@
+uuid: 79c6f8cd-f9ab-4252-9955-4b1a0b92faad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_evidencia
+    - node.type.evidencia
+    - node.type.incidente
+id: node.incidente.field_evidencia
+field_name: field_evidencia
+entity_type: node
+bundle: incidente
+label: Evidencia
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      evidencia: evidencia
+field_type: entity_reference

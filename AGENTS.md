@@ -1,7 +1,7 @@
 # AGENTS — Algarrobo
 
 > Leer en este orden: `~/Proyects/Quebracho/CONTEXT.md` → `~/Proyects/Quebracho/AGENTS.md` (reglas de agentes: evidencia antes de afirmar, ejecutar > instruir) → `HANDOFF.md` de este repo.
-> Español, directo. Proyecto independiente de Drupal: no traer contexto de `ai_provider_universal` salvo lo que dice HANDOFF.
+> Español, directo. Drupal es la interfaz de Algarrobo (`drupal/`, ver `ARCHITECTURE.md`); el módulo `ai_provider_universal` es otro proyecto: no traer su contexto salvo lo que dice HANDOFF.
 
 ## Método: Quebracho Way
 

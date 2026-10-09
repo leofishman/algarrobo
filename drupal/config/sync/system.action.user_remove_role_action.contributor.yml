@@ -1,0 +1,14 @@
+uuid: 2e3518b5-b5d9-44bb-bab5-533a94f83f63
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.contributor
+  module:
+    - user
+id: user_remove_role_action.contributor
+label: 'Remove the Colaborador role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: contributor

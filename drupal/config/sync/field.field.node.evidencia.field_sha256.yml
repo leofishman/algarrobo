@@ -1,0 +1,19 @@
+uuid: 99731746-a82b-400f-b12a-305387060eaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sha256
+    - node.type.evidencia
+id: node.evidencia.field_sha256
+field_name: field_sha256
+entity_type: node
+bundle: evidencia
+label: 'SHA-256 del archivo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

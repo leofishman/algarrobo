@@ -1,0 +1,21 @@
+uuid: 05d67e47-d86a-4dbb-8cf4-e6869cd96a43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_incident_type
+    - node.type.incidente
+  module:
+    - options
+id: node.incidente.field_incident_type
+field_name: field_incident_type
+entity_type: node
+bundle: incidente
+label: Tipo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

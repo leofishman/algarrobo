@@ -1,0 +1,19 @@
+uuid: a8d4c326-3b1a-4e55-8a30-5e1d981bf34c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_id
+    - node.type.incidente
+id: node.incidente.field_item_id
+field_name: field_item_id
+entity_type: node
+bundle: incidente
+label: 'Item ID (Curate)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

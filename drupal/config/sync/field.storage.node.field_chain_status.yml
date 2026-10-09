@@ -1,0 +1,33 @@
+uuid: 03d7e80b-fb49-4738-9099-a966f1d98a89
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_chain_status
+field_name: field_chain_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Absent
+      label: 'Fuera de la lista'
+    -
+      value: RegistrationRequested
+      label: 'Envío pendiente'
+    -
+      value: Registered
+      label: 'En la lista'
+    -
+      value: ClearingRequested
+      label: 'Remoción pendiente'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

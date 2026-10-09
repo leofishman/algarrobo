@@ -1,0 +1,19 @@
+uuid: d0e4f04b-22ee-48df-925a-a4337c1b09f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_claim
+field_name: field_claim
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

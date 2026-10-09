@@ -1,0 +1,19 @@
+uuid: b2515c92-4ee2-4ba3-b062-5a221b9b7451
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ipfs_cid
+    - node.type.evidencia
+id: node.evidencia.field_ipfs_cid
+field_name: field_ipfs_cid
+entity_type: node
+bundle: evidencia
+label: 'CID en IPFS'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
