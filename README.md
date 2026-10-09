@@ -14,3 +14,8 @@ Registro abierto de la seriedad y la tendencia de medios y sitios de informació
 | [POLICY.md](POLICY.md) | Borrador v0 de la política: qué es una entrada y qué cuenta como evidencia |
 | [PRIOR-ART.md](PRIOR-ART.md) | Qué existe parecido y qué cambia en el diseño |
 | [AGENTS.md](AGENTS.md) | Reglas para agentes: Quebracho Way aplicado y kenkeep |
+
+## Licencia
+
+- **Datos y documentos** (la lista, `data/`, POLICY, ARCHITECTURE y el resto de los `.md`): [CC0 1.0](LICENSE-DATA). Se usan sin pedir permiso ni citar.
+- **Código** (`drupal/`, scripts): [GPL-2.0-or-later](LICENSE), la misma que Drupal.
