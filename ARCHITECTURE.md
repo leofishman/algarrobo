@@ -18,6 +18,7 @@
 
 - Un ítem = un incidente (POLICY §1). El id es el hash del contenido y no se edita.
 - Lectura: `litems` del subgraph [`kleros/gtcr-subgraph`](https://github.com/kleros/gtcr-subgraph) (deploy `legacy-curate-gnosis` en The Graph Studio y Goldsky). Estado del ítem: `Absent`, `RegistrationRequested`, `Registered`, `ClearingRequested`. **Endpoint vivo sin probar.**
+- **Riesgo abierto:** docs.kleros.io dice que Curate V1 se depreca y que la creación de listas se está sacando de los frontends; no está claro si un tercero puede crear una lista Light Curate hoy. Si no puede, el plan depende de Kleros.
 
 ## Capa 2 — Exportación
 

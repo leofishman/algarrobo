@@ -64,8 +64,8 @@ Las preguntas cerradas sobre hechos ("¿el medio X publicó una corrección de l
 
 - Se impugna un incidente concreto, citando qué sección de esta política no cumple.
 - Un incidente que ya está en la lista (misma publicación, mismo `type`) se impugna por duplicado aunque el texto difiera: el contrato no lo detecta porque el id es el hash del contenido.
-- Depósitos: a definir (ver HANDOFF, preguntas abiertas). Más altos para impugnar entradas con muchas impugnaciones previas.
-- Corte: la Curation Court de Kleros en Gnosis, con voto oculto desde KIP-87 (completado según la actualización de julio de 2026). Falta confirmar que una lista nueva de terceros pueda usarla (ver HANDOFF).
+- Depósitos: a definir, monto y token. Más altos para impugnar entradas con muchas impugnaciones previas.
+- Corte: la Curation Court de Kleros en Gnosis, con voto oculto desde KIP-87 (completado según la actualización de julio de 2026). Falta confirmar que una lista nueva de terceros pueda usarla (ver ARCHITECTURE).
 
 ## 7. Licencia
 

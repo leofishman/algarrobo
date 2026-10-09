@@ -1,6 +1,6 @@
 # AGENTS — Algarrobo
 
-> Leer en este orden: `~/Proyects/Quebracho/CONTEXT.md` → `~/Proyects/Quebracho/AGENTS.md` (reglas de agentes: evidencia antes de afirmar, ejecutar > instruir) → `HANDOFF.md` de este repo.
+> Leer en este orden: `~/Proyects/Quebracho/CONTEXT.md` → `~/Proyects/Quebracho/AGENTS.md` (reglas de agentes: evidencia antes de afirmar, ejecutar > instruir) → `HANDOFF.md` de este repo (nota interna, fuera de git: existe solo en la copia local de Leo).
 > Español, directo. Drupal es la interfaz de Algarrobo (`drupal/`, ver `ARCHITECTURE.md`); el módulo `ai_provider_universal` es otro proyecto: no traer su contexto salvo lo que dice HANDOFF.
 
 ## Método: Quebracho Way
@@ -10,7 +10,7 @@ Este proyecto se construye según el **Quebracho Way** (`~/Proyects/Quebracho/do
 | Principio | En Algarrobo |
 |---|---|
 | Selección: libre, gobernanza abierta, maduro | Kleros Curate (MIT, gobernanza por PNK) y Reality.eth se evalúan contra estos criterios antes de adoptarlos, no se asumen. Datos CC0. |
-| 2. Reusar la documentación | `POLICY.md` y `HANDOFF.md` son la fuente de verdad. Si quedaron viejos, se actualizan antes de seguir. |
+| 2. Reusar la documentación | `POLICY.md`, `ARCHITECTURE.md` y `HANDOFF.md` (local) son la fuente de verdad. Si quedaron viejos, se actualizan antes de seguir. |
 | 3. Secretos en su lugar | Claves de wallets y de APIs en Vaultwarden. Nunca en el repo, ni "de prueba". |
 | 4. Construir para durar | La política no se puede cambiar sin crear otra lista: se discute antes de publicar, no después. |
 | 5. Probado por sobre propio | Curate y su corte en lugar de contratos propios; identidad por QID de Wikidata; **sin token propio** (lección Civil, ver `PRIOR-ART.md`). Construir solo la capa que falta: la política y la importación. |
