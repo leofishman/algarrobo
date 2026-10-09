@@ -13,3 +13,4 @@ Registro abierto de la seriedad y la tendencia de medios y sitios de informació
 | [HANDOFF.md](HANDOFF.md) | Contexto completo para retomar en una sesión nueva |
 | [POLICY.md](POLICY.md) | Borrador v0 de la política: qué es una entrada y qué cuenta como evidencia |
 | [PITCH-kleros.md](PITCH-kleros.md) | Propuesta corta para el equipo de Kleros |
+| [PRIOR-ART.md](PRIOR-ART.md) | Qué existe parecido y qué cambia en el diseño |
